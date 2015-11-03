@@ -44,3 +44,31 @@ To emphasize the distinction, the new data contains **1 (one)** top-level array 
 
 For your reference, [this link](http://learnjsdata.com/group_data.html) contains a good tutorial for nesting data.
 
+## Hint: Data to DOM
+
+There are many ways to create two `<path>` elements, each representing an item (coffee or tea) over a period of time. Given the data structure we've created using `d3.nes()` above, we can actually use the `.selectAll() - .data() - .enter()` pattern again. It works as follows:
+
+```
+var timeSeries = d3.selectAll('path') //yields a selection of 0 <path> elements
+  .data(data) //joins to an array of two objects
+  .enter()
+  .append('path') //creates two new <path> elements as the enter set
+  .attr('class', function(item){return item.key}) //each element will have class of either "coffee" or "tea"
+```
+
+Carefully consider what the data element joined to each `<path>` DOM element looks like, then look at the following:
+
+```
+timeSeries
+  .attr('d', function(item){
+    return lineGenerator(item.values);
+  });
+```
+
+## Practice the Tooltip Pattern
+
+Practice the tooltip pattern that we worked with in class, then consider the following: how would user interactions work with the `<path>` element? The answer is not so simple, because as the user hovers over the `<path>`, we have no way of knowing which year he/she is querying for. 
+
+User interactions will a `<path>` element that represents an x-y series will be covered later.
+
+
