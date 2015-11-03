@@ -8,14 +8,14 @@ The dimensionality problem we discussed in class boils down to this: in drawing 
 
 However, .csv files can't represent multi-dimensional, nested data structures. The data you initially import is a one-dimensional array with 102 data points, with coffee and tea mixed together like thus:
 
-``
-[
-  {item:"Tea",year:1963,value:1021949},
-  {item:"Tea",year:1964,value:1063199},
-  ...
-  {item:"Coffee",year:1963,value:4152127}
-]
-``
+
+  [
+    {item:"Tea",year:1963,value:1021949},
+    {item:"Tea",year:1964,value:1063199},
+    ...
+    {item:"Coffee",year:1963,value:4152127}
+  ]
+
 
 Your job is to use `d3.nest()` to create the right structure out of this data, so that it will look like this instead:
 
