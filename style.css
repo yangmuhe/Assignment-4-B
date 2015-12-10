@@ -1,30 +1,30 @@
 html,body,div,ul,li,svg{
-	margin:0;
-	padding:0;
-	list-style:none;
+    margin:0;
+    padding:0;
+    list-style:none;
 }
 
 /*------------Global-------------*/
 html,body{
-	height: 100%;
-	position: relative;
-	background: rgb(242,244,233);
+    height: 100%;
+    position: relative;
+    background: rgb(242,244,233);
 }
 
 .container{
     height:100%;
 }
 .container .section{
-	width:100%;
+    width:100%;
 }
 .container .canvas{
-	width:100%;
-	background:white;
-	height:600px;
+    width:100%;
+    background:white;
+    height:600px;
     position:relative;
 }
 .container .controls{
-	margin-bottom:20px;
+    margin-bottom:20px;
 }
 
 /*-----------tooltip-----------*/
@@ -38,7 +38,7 @@ html,body{
 
 /*------------font-------------*/
 body{
-	font-size: 16px;
+    font-size: 16px;
 }
 h1{ font-size:2em;}
 h2{ font-size:1.1em;}
@@ -62,18 +62,18 @@ p{ font-size: .9em;}
     stroke-width:2px;
     stroke:rgb(150,150,150);
 }
-    .coffee-data-point{ stroke:red; }
-    .tea-data-point{ stroke:rgb(0,200,255); }
+.coffee-data-point{ stroke:red; }
+.tea-data-point{ stroke:rgb(0,200,255); }
 .data-line{
     fill:none;
     stroke-width:2px;
     stroke:rgb(150,150,150);
 }
-    .coffee-data-line{ stroke:red; }
-    .tea-data-line{ stroke:rgb(0,200,255); }
+.coffee-data-line{ stroke:red; }
+.tea-data-line{ stroke:rgb(0,200,255); }
 .data-area{
     fill-opacity:.05;
     fill:rgb(150,150,150);
 }
-    .coffee-data-area{ fill:red; }
-    .tea-data-area{ fill:rgb(0,200,255); }
+.coffee-data-area{ fill:red; }
+.tea-data-area{ fill:rgb(0,200,255); }
